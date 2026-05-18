@@ -1,15 +1,15 @@
 name: Build huggingface Image
 
-于:
+on:
   push:
-    分支: [ hug ]
+    branches: [ "hug" ]
     paths:
       - 'Dockerfile'
       - 'index.js'
       - 'package.json'
       - 'index.html'
   pull_request:
-    分支: [ hug ]
+    branches: [ "hug" ]
   workflow_dispatch:
 
 jobs:
